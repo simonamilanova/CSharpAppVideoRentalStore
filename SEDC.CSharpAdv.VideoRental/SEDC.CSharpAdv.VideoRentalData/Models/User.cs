@@ -1,4 +1,5 @@
-﻿using SEDC.CSharpAdv.VideoRentalData.BaseModels;
+﻿
+using SEDC.CSharpAdv.VideoRentalData.BaseModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,7 +19,6 @@ namespace SEDC.CSharpAdv.VideoRentalData.Models
         {
             get 
             {
-
                 return DateTime.Now.Year - DateOfBirth.Year;
             }
         }
@@ -27,7 +27,6 @@ namespace SEDC.CSharpAdv.VideoRentalData.Models
         {
             RentalHistory = new List<RentalInfo>();
             RentedMovies = new List<RentalInfo>();
-
         }
 
         public void ViewRentedMovies()
